@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root{
+    --blueandwhite : hsl(225, 100%, 94%);
+    --blue: hsl(245, 75%, 52%);
+    --white2 : hsl(225, 100%, 98%);
+    --gray : hsl(224, 23%, 55%);
+    --dark-blue : hsl(223, 47%, 23%);
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: "Red Hat Display", sans-serif;
+}
+
+main{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-color: var(--blueandwhite);
+    background-repeat: no-repeat , repeat;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-card
+{
+    background-color: white;
+    width: 350px;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    position: absolute;
+   box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.1);
+}
+.imge
+{
+    width: 350px;
+    height: 190px;
+    background-image: url(images/illustration-hero.svg);
+    background-size:cover;
+    border-top-left-radius:15px;
+    border-top-right-radius: 15px;
+    
+}
+
+.card-title
+{
+    margin-top: 30px;
+    font-weight: 900;
+    margin-bottom: 15px;   
+}
+.card-info
+{
+    text-align: center;
+    margin-bottom: 20px;   
+  
+    opacity: 60%;
+}
+.annual-plan
+{
+    background-color: var(--white2);
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    width: 290px;
+    height: 70px;
+    border-radius: 10px;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.music-button
+{
+    margin-left: 15px;
+}
+.music-button-text
+{
+    font-weight: 900;
+    margin-right: 45px;
+    font-size: 14px;
+}
+.music-button-price
+{
+    font-weight: 500;
+    opacity: 60%;
+}
+.music-button-change
+{
+    text-decoration:underline;
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+.Payment
+{
+    width: 290px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--blue);
+    color: white;
+    font-weight: 700;
+    border: none;
+    box-shadow: 1px 15px 9px var(--blueandwhite);
+    margin-bottom: 20px;
+}
+.Cancel-order
+{
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 60%;
+    border: none;
+}
